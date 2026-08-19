@@ -195,3 +195,5 @@ def main():
             f"Score: {s['score']}/10"
         )
         send_telegram(message)
+if __name__ == "__main__":
+    main()

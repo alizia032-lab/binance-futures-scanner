@@ -181,4 +181,11 @@ def main():
         time.sleep(0.08)
 
     if not setups:
-        print("NO CONFIRMED SETUPS")
+            print("NO CONFIRMED SETUPS")
+            send_telegram("🔎 Binance Scanner: No confirmed setup right now.")
+    if setups:
+                        
+        
+                
+        
+  

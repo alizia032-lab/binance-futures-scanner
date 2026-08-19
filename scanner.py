@@ -184,8 +184,14 @@ def main():
             print("NO CONFIRMED SETUPS")
             send_telegram("🔎 Binance Scanner: No confirmed setup right now.")
     if setups:
-                        
-        
-                
-        
-  
+    for s in setups:
+        message = (
+            f"🚨 CONFIRMED {s['side']}\n"
+            f"Pair: {s['symbol']}\n"
+            f"Entry: {s['entry']}\n"
+            f"SL: {s['sl']}\n"
+            f"TP1: {s['tp1']}\n"
+            f"TP2: {s['tp2']}\n"
+            f"Score: {s['score']}/10"
+        )
+        send_telegram(message)

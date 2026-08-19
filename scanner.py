@@ -181,4 +181,4 @@ def main():
         time.sleep(0.08)
 
     if not setups:
-        print("NO
+        print("NO CONFIRMED SETUPS")
